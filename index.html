@@ -1,0 +1,884 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio personal de Fernando Graciani, desarrollador de aplicaciones web."
+    >
+
+    <title>Fernando Graciani Aguirre | Desarrollador Web</title>
+
+    <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/main.js"></script>
+
+    <!-- Iconos de Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         CABECERA Y NAVEGACIÓN
+    ========================== -->
+
+    <header class="cabecera">
+        <div class="contenedor navegacion">
+
+            <a href="#inicio" class="logo">
+                Graciani Web Studio<span>.</span>
+            </a>
+
+            <button
+                class="boton-menu"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul class="menu" id="menu">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre-mi">Sobre mí</a>
+                    </li>
+
+                    <li>
+                        <a href="#tecnologias">Tecnologías</a>
+                    </li>
+
+                    <li>
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+
+                    <li>
+                        <a href="#experiencia">Experiencia</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             SECCIÓN DE INICIO
+        ========================== -->
+
+        <section class="inicio" id="inicio">
+            <div class="contenedor inicio-contenido">
+
+                <div class="inicio-texto">
+
+                    <span class="saludo">
+                        Hola, soy
+                    </span>
+
+                    <h1>
+                        Fernando
+                        <span>Graciani</span>
+                        Aguirre
+                    </h1>
+
+                    <h2>
+                        Desarrollador de Aplicaciones Web
+                    </h2>
+
+                    <p>
+                        Diseño y desarrollo páginas web funcionales,
+                        modernas y adaptadas a cualquier dispositivo.
+                        Trabajo con HTML, CSS, JavaScript, PHP, MySQL,
+                        SQL Server y herramientas de análisis como Power BI.
+                    </p>
+
+                    <div class="botones-inicio">
+
+                        <a
+                            href="#proyectos"
+                            class="boton boton-principal"
+                        >
+                            Ver proyectos
+                        </a>
+
+                        <a
+                            href="#contacto"
+                            class="boton boton-secundario"
+                        >
+                            Contactar
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="inicio-imagen">
+                    <img
+                        src="imagenes/fernando.jpg"
+                        alt="Fotografía de Fernando Graciani"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECCIÓN SOBRE MÍ
+        ========================== -->
+
+        <section class="sobre-mi seccion" id="sobre-mi">
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+                    <span>Conóceme</span>
+
+                    <h2>Sobre mí</h2>
+
+                    <p>
+                        Mi experiencia profesional y mi formación me permiten
+                        combinar conocimientos tecnológicos con una visión
+                        práctica del funcionamiento de las empresas.
+                    </p>
+                </div>
+
+                <div class="sobre-mi-contenido">
+
+                    <div class="sobre-mi-imagen">
+                        <img
+                            src="imagenes/sobre-mi.jpg"
+                            alt="Fernando trabajando como desarrollador web"
+                        >
+                    </div>
+
+                    <div class="sobre-mi-texto">
+
+                        <h3>
+                            Desarrollo soluciones digitales útiles y fáciles de usar
+                        </h3>
+
+                        <p>
+                            Soy titulado en Desarrollo de Aplicaciones Web y
+                            tengo formación en programación, bases de datos,
+                            diseño web y análisis de información.
+                        </p>
+
+                        <p>
+                            También cuento con más de diez años de experiencia
+                            en logística y almacén, realizando funciones de
+                            preparación de pedidos, gestión de stock, manejo
+                            de documentación y utilización de herramientas
+                            como SAP.
+                        </p>
+
+                        <p>
+                            Esta combinación me permite comprender tanto la
+                            parte técnica como las necesidades reales de una
+                            empresa y sus trabajadores.
+                        </p>
+
+                        <div class="datos-personales">
+
+                            <div class="dato">
+                                <strong>Nombre</strong>
+                                <span>Fernando Graciani</span>
+                            </div>
+
+                            <div class="dato">
+                                <strong>Ubicación</strong>
+                                <span>Sevilla, España</span>
+                            </div>
+
+                            <div class="dato">
+                                <strong>Formación</strong>
+                                <span>Desarrollo de Aplicaciones Web</span>
+                            </div>
+
+                            <div class="dato">
+                                <strong>Disponibilidad</strong>
+                                <span>Proyectos y oportunidades laborales</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="documentos/cv-fernando.pdf"
+                            class="boton boton-principal"
+                            download
+                        >
+                            Descargar CV
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECCIÓN TECNOLOGÍAS
+        ========================== -->
+
+        <section class="seccion" id="tecnologias">
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+                    <span>Herramientas</span>
+
+                    <h2>Tecnologías</h2>
+
+                    <p>
+                        Estas son algunas de las tecnologías y herramientas
+                        con las que trabajo.
+                    </p>
+                </div>
+
+                <div class="tecnologias-grid">
+
+                    <article class="tecnologia">
+                        <i class="fa-brands fa-html5"></i>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Estructuras web semánticas, accesibles y organizadas.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Diseños responsive, animaciones y estilos modernos.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-brands fa-js"></i>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactividad, eventos y funcionalidades dinámicas.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-brands fa-php"></i>
+
+                        <h3>PHP</h3>
+
+                        <p>
+                            Desarrollo backend y conexión con bases de datos.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-solid fa-database"></i>
+
+                        <h3>MySQL</h3>
+
+                        <p>
+                            Diseño, consulta y gestión de bases de datos.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-solid fa-server"></i>
+
+                        <h3>SQL Server</h3>
+
+                        <p>
+                            Gestión de datos y creación de consultas SQL.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <h3>Power BI</h3>
+
+                        <p>
+                            Dashboards, visualización y análisis de información.
+                        </p>
+                    </article>
+
+                    <article class="tecnologia">
+                        <i class="fa-brands fa-git-alt"></i>
+
+                        <h3>Git y GitHub</h3>
+
+                        <p>
+                            Control de versiones y publicación de proyectos.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECCIÓN PROYECTOS
+        ========================== -->
+
+        <section class="proyectos seccion" id="proyectos">
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+                    <span>Mi trabajo</span>
+
+                    <h2>Proyectos</h2>
+
+                    <p>
+                        Algunos proyectos realizados durante mi formación
+                        y aprendizaje como desarrollador.
+                    </p>
+                </div>
+
+                <div class="proyectos-grid">
+
+                    <!-- Proyecto 1 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+                            <img
+                                src="imagenes/viajerxs360.jpg"
+                                alt="Captura del proyecto Viajerxs 360"
+                            >
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <h3>Viajerxs 360</h3>
+
+                            <p>
+                                Plataforma web de viajes con registro de usuarios,
+                                noticias, citas y panel de administración.
+                            </p>
+
+                            <div class="etiquetas">
+                                <span class="etiqueta">PHP</span>
+                                <span class="etiqueta">MySQL</span>
+                                <span class="etiqueta">JavaScript</span>
+                                <span class="etiqueta">CSS</span>
+                            </div>
+
+                            <div class="enlaces-proyecto">
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver proyecto
+                                </a>
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Código
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Proyecto 2 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+                            <img
+                                src="imagenes/rotten-vinilos.jpg"
+                                alt="Captura de la tienda Rotten Vinilos"
+                            >
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <h3>Rotten Vinilos</h3>
+
+                            <p>
+                                Tienda web especializada en discos de rock y punk,
+                                con catálogo, noticias, contacto y localización.
+                            </p>
+
+                            <div class="etiquetas">
+                                <span class="etiqueta">HTML</span>
+                                <span class="etiqueta">CSS</span>
+                                <span class="etiqueta">JavaScript</span>
+                                <span class="etiqueta">Leaflet</span>
+                            </div>
+
+                            <div class="enlaces-proyecto">
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver proyecto
+                                </a>
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Código
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Proyecto 3 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+                            <img
+                                src="imagenes/dashboard-powerbi.jpg"
+                                alt="Dashboard de ventas creado con Power BI"
+                            >
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <h3>Dashboard de ventas</h3>
+
+                            <p>
+                                Panel interactivo para analizar ventas,
+                                categorías, productos y evolución de resultados.
+                            </p>
+
+                            <div class="etiquetas">
+                                <span class="etiqueta">Power BI</span>
+                                <span class="etiqueta">SQL Server</span>
+                                <span class="etiqueta">DAX</span>
+                                <span class="etiqueta">Datos</span>
+                            </div>
+
+                            <div class="enlaces-proyecto">
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver proyecto
+                                </a>
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Más información
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECCIÓN EXPERIENCIA
+        ========================== -->
+
+        <section class="seccion" id="experiencia">
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+                    <span>Trayectoria</span>
+
+                    <h2>Experiencia y formación</h2>
+
+                    <p>
+                        Mi recorrido profesional combina experiencia operativa,
+                        atención al cliente y formación tecnológica.
+                    </p>
+                </div>
+
+                <div class="linea-tiempo">
+
+                    <article class="experiencia-item">
+
+                        <span class="fecha">
+                            Actualidad
+                        </span>
+
+                        <h3>
+                            Desarrollo de proyectos web
+                        </h3>
+
+                        <h4>
+                            Proyectos personales y formación
+                        </h4>
+
+                        <p>
+                            Desarrollo de páginas web, aplicaciones con PHP y
+                            MySQL, proyectos de análisis de datos y mejora
+                            continua de conocimientos en programación.
+                        </p>
+
+                    </article>
+
+                    <article class="experiencia-item">
+
+                        <span class="fecha">
+                            Formación finalizada
+                        </span>
+
+                        <h3>
+                            Técnico Superior en Desarrollo de Aplicaciones Web
+                        </h3>
+
+                        <h4>
+                            Formación profesional
+                        </h4>
+
+                        <p>
+                            Formación en programación, bases de datos,
+                            desarrollo frontend, desarrollo backend,
+                            despliegue de aplicaciones y diseño de interfaces.
+                        </p>
+
+                    </article>
+
+                    <article class="experiencia-item">
+
+                        <span class="fecha">
+                            Más de 10 años
+                        </span>
+
+                        <h3>
+                            Operario de almacén y logística
+                        </h3>
+
+                        <h4>
+                            Diferentes empresas y sectores
+                        </h4>
+
+                        <p>
+                            Preparación de pedidos, picking, reposición,
+                            gestión de stock, manejo de carretillas,
+                            albaranes, documentación y utilización básica de SAP.
+                        </p>
+
+                    </article>
+
+                    <article class="experiencia-item">
+
+                        <span class="fecha">
+                            Experiencia adicional
+                        </span>
+
+                        <h3>
+                            Atención al cliente
+                        </h3>
+
+                        <h4>
+                            Comercio, hostelería y captación
+                        </h4>
+
+                        <p>
+                            Atención directa al público, resolución de dudas,
+                            trabajo en equipo, comunicación y orientación
+                            a las necesidades del cliente.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECCIÓN CONTACTO
+        ========================== -->
+
+        <section class="contacto seccion" id="contacto">
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+                    <span>Hablemos</span>
+
+                    <h2>Contacto</h2>
+
+                    <p>
+                        Puedes contactar conmigo para oportunidades laborales,
+                        colaboraciones o proyectos de desarrollo web.
+                    </p>
+                </div>
+
+                <div class="contacto-contenido">
+
+                    <div class="contacto-info">
+
+                        <h3>
+                            ¿Tienes un proyecto en mente?
+                        </h3>
+
+                        <p>
+                            Escríbeme y cuéntame qué necesitas. Estaré encantado
+                            de estudiar tu propuesta y buscar una solución.
+                        </p>
+
+                        <div class="contacto-lista">
+
+                            <div class="contacto-item">
+
+                                <div class="contacto-icono">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <span>Correo electrónico</span>
+
+                                    <a href="mailto:tuemail@correo.com">
+                                        tuemail@correo.com
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="contacto-item">
+
+                                <div class="contacto-icono">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div>
+                                    <span>Ubicación</span>
+                                    <strong>Sevilla, España</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="contacto-item">
+
+                                <div class="contacto-icono">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+
+                                <div>
+                                    <span>LinkedIn</span>
+
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver perfil profesional
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="contacto-item">
+
+                                <div class="contacto-icono">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+
+                                <div>
+                                    <span>GitHub</span>
+
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ver repositorios
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--
+                        Este formulario todavía no envía los mensajes.
+                        Más adelante puede conectarse con Formspree,
+                        EmailJS o un archivo PHP.
+                    -->
+
+                    <form class="formulario" id="formulario-contacto">
+
+                        <div class="grupo-formulario">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escribe tu nombre"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="email">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="correo@ejemplo.com"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="asunto">
+                                Asunto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="asunto"
+                                name="asunto"
+                                placeholder="Motivo del mensaje"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                placeholder="Cuéntame en qué puedo ayudarte"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="boton boton-principal"
+                        >
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+
+            <p>
+                © <span id="anio"></span> Fernando Graciani.
+                Todos los derechos reservados.
+            </p>
+
+            <div class="redes-sociales">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    href="mailto:tuemail@correo.com"
+                    aria-label="Correo electrónico"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Archivo JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+```
