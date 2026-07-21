@@ -939,3 +939,49 @@ textarea {
         height: 760px;
     }
 }
+
+/* =========================
+   BOTÓN FLOTANTE WHATSAPP
+========================= */
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    color: #ffffff;
+    background-color: #25d366;
+    border-radius: 50%;
+
+    font-size: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #20bd5a;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-flotante {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+        font-size: 1.8rem;
+    }
+}
