@@ -189,3 +189,4 @@ function mostrarMensajeFormulario(texto, tipo) {
     mensajeFormulario.textContent = texto;
     mensajeFormulario.className = `mensaje-formulario ${tipo}`;
 }
+
