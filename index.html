@@ -26,15 +26,26 @@
     >
 </head>
 
+
 <a
-    href="https://wa.me/34673998497"
+    href="https://wa.me/34673998497?text=Hola%20Fernando,%20he%20visto%20tu%20web%20y%20quiero%20contactar%20contigo."
     class="whatsapp-flotante"
+    id="boton-whatsapp"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Hablemos mejor por WhatsApp"
+    aria-label="Hablar por WhatsApp"
 >
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+
+<button
+    class="volver-arriba"
+    id="volver-arriba"
+    type="button"
+    aria-label="Volver arriba"
+>
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <body>
 
@@ -72,7 +83,16 @@
                     </li>
 
                     <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+
+                    <li>
                         <a href="#tecnologias">Tecnologías</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#proceso">Cómo trabajo</a> 
+
                     </li>
 
                     <li>
@@ -249,6 +269,69 @@
             </div>
         </section>
 
+        <section class="servicios seccion" id="servicios">
+    <div class="contenedor">
+
+        <div class="titulo-seccion">
+            <span>Qué puedo hacer</span>
+            <h2>Servicios</h2>
+            <p>
+                Soluciones digitales adaptadas a pequeños negocios,
+                profesionales y proyectos personales.
+            </p>
+        </div>
+
+        <div class="servicios-grid">
+
+            <article class="servicio">
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h3>Páginas web</h3>
+
+                <p>
+                    Desarrollo páginas modernas, responsive y adaptadas
+                    a móviles, tablets y ordenadores.
+                </p>
+            </article>
+
+            <article class="servicio">
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Tiendas online</h3>
+
+                <p>
+                    Creación de catálogos, fichas de productos,
+                    formularios y sistemas de contacto.
+                </p>
+            </article>
+
+            <article class="servicio">
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Bases de datos</h3>
+
+                <p>
+                    Aplicaciones conectadas con MySQL y gestión
+                    de usuarios, pedidos o información empresarial.
+                </p>
+            </article>
+
+            <article class="servicio">
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <h3>Power BI</h3>
+
+                <p>
+                    Dashboards para analizar ventas, productos,
+                    clientes y resultados.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
 
         <!-- =========================
              SECCIÓN TECNOLOGÍAS
@@ -354,6 +437,94 @@
 
             </div>
         </section>
+
+        <section class="proceso seccion" id="proceso">
+    <div class="contenedor">
+
+        <div class="titulo-seccion">
+            <span>Mi forma de trabajar</span>
+            <h2>Cómo desarrollo tu proyecto</h2>
+
+            <p>
+                Un proceso claro y organizado desde la primera conversación
+                hasta la publicación de la página web.
+            </p>
+        </div>
+
+        <div class="proceso-grid">
+
+            <article class="paso">
+                <span class="paso-numero">01</span>
+
+                <div class="paso-icono">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <h3>Hablamos</h3>
+
+                <p>
+                    Me cuentas tu idea, el tipo de negocio y qué quieres
+                    conseguir con la página.
+                </p>
+            </article>
+
+            <article class="paso">
+                <span class="paso-numero">02</span>
+
+                <div class="paso-icono">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h3>Diseño la propuesta</h3>
+
+                <p>
+                    Organizo las secciones, el contenido y el estilo visual
+                    adaptándolo a tu proyecto.
+                </p>
+            </article>
+
+            <article class="paso">
+                <span class="paso-numero">03</span>
+
+                <div class="paso-icono">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Desarrollo la web</h3>
+
+                <p>
+                    Construyo una página rápida, funcional y adaptada
+                    correctamente a móviles y ordenadores.
+                </p>
+            </article>
+
+            <article class="paso">
+                <span class="paso-numero">04</span>
+
+                <div class="paso-icono">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+
+                <h3>Publicación</h3>
+
+                <p>
+                    Revisamos el resultado, realizo los últimos cambios
+                    y dejo la página publicada y preparada.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="proceso-accion">
+            <p>¿Tienes una idea y no sabes cómo empezar?</p>
+
+            <a href="#reservar" class="boton boton-principal">
+                Cuéntame tu proyecto
+            </a>
+        </div>
+
+    </div>
+</section>
 
 
         <!-- =========================
@@ -917,6 +1088,7 @@
         </div>
     </footer>
 
+    
 
     <!-- JavaScript de Calendly -->
     <script
@@ -924,9 +1096,6 @@
         type="text/javascript"
         async
     ></script>
-
-
-
 
     <!-- Archivo JavaScript -->
     <script src="js/main.js"></script>
