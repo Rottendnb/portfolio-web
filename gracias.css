@@ -1,0 +1,31 @@
+.thanks-page { min-height: 100vh; color: var(--white); background: var(--ink); }
+.thanks-main { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); gap: 8vw; align-items: center; width: min(calc(100% - 64px), var(--max)); min-height: calc(100vh - 180px); margin: 0 auto; padding: 110px 0 90px; }
+.thanks-card { max-width: 880px; }
+.thanks-check { display: grid; width: 64px; height: 64px; margin-bottom: 35px; place-items: center; color: var(--ink); background: #3fce87; border-radius: 50%; font-size: 1.8rem; font-weight: 900; }
+.thanks-kicker { color: #b7bac0; font-size: .67rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.thanks-card h1 { margin: 24px 0 28px; font-size: clamp(4.5rem, 8vw, 8.2rem); font-weight: 600; letter-spacing: -.075em; line-height: .84; }
+.thanks-card h1 em { color: var(--accent-soft); font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+.thanks-card > p { max-width: 680px; color: #b7bac0; font-size: 1.02rem; }
+.thanks-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
+.thanks-whatsapp { color: white; background: #20bd68; }
+.thanks-home { display: inline-block; margin-top: 28px; color: #92969e; font-size: .72rem; border-bottom: 1px solid #666; }
+.thanks-next { padding: 35px; background: var(--ink-soft); border: 1px solid var(--line-light); }
+.thanks-next > span { color: var(--accent-soft); font-size: .65rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.thanks-next ol { margin-top: 24px; list-style: none; }
+.thanks-next li { display: grid; grid-template-columns: 38px 1fr; gap: 12px; padding: 18px 0; border-top: 1px solid var(--line-light); }
+.thanks-next strong { color: var(--accent-soft); font-size: .64rem; }
+.thanks-next p { color: #b2b5bb; font-size: .78rem; }
+
+@media (max-width: 900px) {
+    .thanks-main { grid-template-columns: 1fr; padding-top: 90px; }
+    .thanks-next { max-width: 650px; }
+}
+
+@media (max-width: 620px) {
+    .thanks-header .header-cta::after { content: "Inicio ↗"; }
+    .thanks-main { width: calc(100% - 36px); padding: 75px 0; }
+    .thanks-card h1 { font-size: clamp(3.8rem, 18vw, 5.3rem); }
+    .thanks-actions { align-items: stretch; flex-direction: column; }
+    .thanks-actions .button { width: 100%; }
+    .thanks-next { padding: 28px 22px; }
+}

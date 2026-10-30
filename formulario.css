@@ -1,0 +1,69 @@
+.form-page { min-height: 100vh; color: var(--white); background: var(--ink); }
+.form-header { position: relative; left: auto; transform: none; margin-inline: auto; }
+.form-header nav .current { color: var(--accent-soft); }
+.contact-page { display: grid; grid-template-columns: minmax(320px, .8fr) minmax(520px, 1.2fr); gap: clamp(60px, 8vw, 125px); width: min(calc(100% - 64px), var(--max)); margin: 0 auto; padding: 95px 0 125px; }
+.contact-intro { align-self: start; position: sticky; top: 35px; }
+.contact-kicker { display: flex; align-items: center; gap: 11px; color: #b9bbc0; font-size: .67rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.contact-kicker i { width: 8px; height: 8px; background: #3fce87; border-radius: 50%; box-shadow: 0 0 0 5px rgba(63,206,135,.11); }
+.contact-intro h1 { max-width: 720px; margin: 42px 0 28px; font-size: clamp(3.8rem, 6.3vw, 7rem); font-weight: 600; letter-spacing: -.07em; line-height: .88; }
+.contact-intro h1 em { color: var(--accent-soft); font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+.contact-intro > p { max-width: 590px; color: #b2b5bb; }
+.selected-service { margin-top: 38px; padding: 22px 24px; color: var(--ink); background: var(--accent-soft); }
+.selected-service span, .selected-service small { display: block; }
+.selected-service span { margin-bottom: 8px; font-size: .6rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.selected-service strong { font-size: 1.35rem; letter-spacing: -.03em; }
+.selected-service small { margin-top: 4px; font-size: .7rem; }
+.contact-steps { margin-top: 42px; list-style: none; border-top: 1px solid var(--line-light); }
+.contact-steps li { display: grid; grid-template-columns: 42px 1fr; gap: 18px; padding: 19px 0; border-bottom: 1px solid var(--line-light); }
+.contact-steps li > span { color: var(--accent-soft); font-size: .64rem; font-weight: 900; }
+.contact-steps strong { display: block; margin-bottom: 3px; font-size: .8rem; }
+.contact-steps p { color: #8f939b; font-size: .72rem; }
+.contact-panel { color: var(--ink); background: var(--white); padding: clamp(34px, 5vw, 62px); box-shadow: 0 35px 80px rgba(0,0,0,.24); }
+.contact-form-heading { padding-bottom: 30px; border-bottom: 1px solid var(--line-dark); }
+.contact-form-heading > span { color: var(--accent); font-size: .63rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.contact-form-heading h2 { margin: 10px 0 8px; font-size: clamp(2rem, 3.5vw, 3.4rem); letter-spacing: -.055em; line-height: 1; }
+.contact-form-heading p { color: var(--muted); font-size: .73rem; }
+.project-form fieldset { margin: 34px 0 0; padding: 0; border: 0; }
+.project-form legend { width: 100%; margin-bottom: 20px; padding-bottom: 10px; color: var(--accent); border-bottom: 1px solid var(--line-dark); font-size: .67rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.project-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.project-form-grid label { display: grid; gap: 8px; font-size: .73rem; font-weight: 800; }
+.project-form-grid input, .project-form-grid select, .project-form-grid textarea { width: 100%; padding: 14px 15px; color: var(--ink); background: var(--paper); border: 1px solid var(--line-dark); border-radius: 0; outline: none; transition: border-color .2s ease, box-shadow .2s ease; }
+.project-form-grid input:focus, .project-form-grid select:focus, .project-form-grid textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(239,64,86,.1); }
+.project-form-grid textarea { min-height: 165px; resize: vertical; }
+.project-form-wide { grid-column: 1 / -1; }
+.project-form-wide small { color: var(--muted); font-size: .65rem; font-weight: 400; }
+.project-consent { display: flex; align-items: flex-start; gap: 11px; margin: 30px 0 0; color: var(--muted); font-size: .7rem; cursor: pointer; }
+.project-consent input { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 2px; accent-color: var(--accent); }
+.project-consent a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.project-submit { display: flex; align-items: center; gap: 22px; margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--line-dark); }
+.project-submit button { display: inline-flex; align-items: center; justify-content: space-between; gap: 45px; min-height: 52px; padding: 0 20px; color: var(--white); background: var(--ink); border: 0; border-radius: 999px; cursor: pointer; font-weight: 800; }
+.project-submit button:hover { background: var(--accent); }
+.project-submit p { max-width: 290px; color: var(--muted); font-size: .66rem; }
+.project-submit button:disabled { cursor: wait; opacity: .65; }
+.form-status { min-height: 1.2em; margin-top: 16px; color: #b3263d; font-size: .72rem; font-weight: 700; }
+.form-footer { border-top: 1px solid var(--line-light); }
+
+@media (max-width: 940px) {
+    .form-header { grid-template-areas: "brand cta" "nav nav"; grid-template-columns: 1fr auto; gap: 12px 20px; padding: 15px 0; }
+    .form-header .brand { grid-area: brand; }
+    .form-header nav { grid-area: nav; display: flex; width: 100%; overflow-x: auto; gap: 24px; padding-top: 12px; border-top: 1px solid var(--line-light); scrollbar-width: none; }
+    .form-header nav::-webkit-scrollbar { display: none; }
+    .form-header .header-cta { grid-area: cta; }
+    .contact-page { grid-template-columns: 1fr; }
+    .contact-intro { position: static; }
+}
+
+@media (max-width: 620px) {
+    .form-header { width: calc(100% - 36px); }
+    .form-header .brand { max-width: 130px; }
+    .form-header .header-cta { font-size: 0; }
+    .form-header .header-cta::after { content: "Llamar ↗"; font-size: .7rem; }
+    .form-header nav { justify-content: space-between; gap: 10px; overflow: visible; font-size: .61rem; }
+    .contact-page { width: calc(100% - 36px); padding: 70px 0 90px; }
+    .contact-intro h1 { font-size: clamp(3.4rem, 16vw, 4.8rem); }
+    .contact-panel { padding: 30px 20px; }
+    .project-form-grid { grid-template-columns: 1fr; }
+    .project-form-wide { grid-column: auto; }
+    .project-submit { align-items: flex-start; flex-direction: column; }
+    .project-submit button { width: 100%; }
+}

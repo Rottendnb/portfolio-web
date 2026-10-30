@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuéntame tu proyecto web y recibe una propuesta adaptada a tus objetivos.">
+    <meta name="theme-color" content="#111214">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="js/formulario.js" defer></script>
+    <script src="js/floating-actions.js" defer></script>
+    <script src="js/form-submit.js" defer></script>
+    <title>Cuéntame tu proyecto | Graciani Web Studio</title>
+</head>
+<body class="form-page" id="top">
+    <header class="site-header form-header">
+        <a class="brand" href="index.html">Graciani Web Studio<span>®</span></a>
+        <nav aria-label="Navegación principal">
+            <a href="index.html#capacidades">Capacidades</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#opiniones">Opiniones</a>
+            <a href="index.html#tarifas">Tarifas</a>
+            <a class="current" href="formulario.html" aria-current="page">Formulario</a>
+        </nav>
+        <a class="header-cta" href="https://calendly.com/graciani-web-studio/30min" target="_blank" rel="noopener noreferrer">Prefiero una llamada ↗</a>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-intro">
+            <div class="contact-kicker"><i></i> Consulta de proyecto</div>
+            <h1>Hablemos de lo que quieres <em>construir.</em></h1>
+            <p>Cuéntame el punto de partida, qué necesitas conseguir y qué opción te interesa. Con esa información podré darte una respuesta mucho más útil.</p>
+
+            <div class="selected-service">
+                <span>Opción seleccionada</span>
+                <strong data-selected-service>Proyecto por definir</strong>
+                <small data-selected-price>Prepararemos el alcance contigo.</small>
+            </div>
+
+            <ol class="contact-steps">
+                <li><span>01</span><div><strong>Reviso tu consulta</strong><p>Objetivo, contexto y necesidades principales.</p></div></li>
+                <li><span>02</span><div><strong>Aclaramos el alcance</strong><p>Te preguntaré únicamente lo necesario para concretarlo.</p></div></li>
+                <li><span>03</span><div><strong>Recibes una propuesta</strong><p>Con alcance, condiciones, plazo e importe por escrito.</p></div></li>
+            </ol>
+        </section>
+
+        <section class="contact-panel" aria-labelledby="form-title">
+            <div class="contact-form-heading">
+                <span>Información inicial</span>
+                <h2 id="form-title">Cuéntame tu proyecto</h2>
+                <p>Los campos marcados con * son necesarios.</p>
+            </div>
+
+            <form class="project-form" action="https://formspree.io/f/xwlvozgk" method="POST" data-project-form>
+                <input type="hidden" name="_subject" value="Nueva consulta de presupuesto desde el portfolio" data-form-subject>
+                <input type="hidden" name="origen" value="Página de tarifas del portfolio">
+                <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <div class="project-form-grid">
+                        <label><span>Nombre *</span><input type="text" name="nombre" autocomplete="name" required></label>
+                        <label><span>Correo electrónico *</span><input type="email" name="email" autocomplete="email" required></label>
+                        <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel" inputmode="tel"></label>
+                        <label><span>Negocio o proyecto</span><input type="text" name="negocio" autocomplete="organization"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre el proyecto</legend>
+                    <div class="project-form-grid">
+                        <label>
+                            <span>Servicio que te interesa *</span>
+                            <select name="servicio" required data-service-select>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="Web inicial">Web inicial — desde 290 €</option>
+                                <option value="Web profesional">Web profesional — desde 490 €</option>
+                                <option value="Solución a medida">Solución a medida — desde 790 €</option>
+                                <option value="No lo tengo claro">No lo tengo claro todavía</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Inversión aproximada *</span>
+                            <select name="presupuesto" required>
+                                <option value="" selected disabled>Selecciona un intervalo</option>
+                                <option>290 € — 490 €</option>
+                                <option>490 € — 790 €</option>
+                                <option>790 € — 1.500 €</option>
+                                <option>Más de 1.500 €</option>
+                                <option>Necesito orientación</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>¿Cuándo te gustaría empezar?</span>
+                            <select name="fecha_inicio">
+                                <option value="" selected>Sin fecha decidida</option>
+                                <option>Lo antes posible</option>
+                                <option>Durante el próximo mes</option>
+                                <option>En los próximos 2–3 meses</option>
+                                <option>Solo estoy valorando opciones</option>
+                            </select>
+                        </label>
+                        <label><span>Web actual, si existe</span><input type="url" name="web_actual" inputmode="url" placeholder="https://"></label>
+                        <label class="project-form-wide"><span>¿Qué necesitas conseguir con esta web? *</span><textarea name="objetivo" minlength="30" maxlength="1500" placeholder="Por ejemplo: recibir solicitudes, mostrar servicios, vender productos o mejorar una web existente…" required></textarea><small>Cuanto más contexto incluyas, mejor podré orientarte.</small></label>
+                    </div>
+                </fieldset>
+
+                <label class="project-consent">
+                    <input type="checkbox" name="consentimiento" value="Aceptado" required>
+                    <span>He leído la <a href="privacidad.html" target="_blank">política de privacidad</a> y acepto que mis datos se utilicen para responder a esta consulta. *</span>
+                </label>
+
+                <div class="project-submit">
+                    <button type="submit" data-submit-button><span data-submit-label>Enviar consulta</span> <span>→</span></button>
+                    <p>Sin compromiso. Primero comprobaremos si puedo ayudarte y cuál es el enfoque adecuado.</p>
+                </div>
+                <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+        </section>
+    </main>
+
+    <aside class="floating-actions" aria-label="Accesos rápidos">
+        <a class="floating-action floating-whatsapp" href="https://wa.me/34673998497?text=Hola%20Fernando%2C%20quiero%20consultarte%20un%20proyecto%20web." target="_blank" rel="noopener noreferrer" aria-label="Escribirme por WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.7 9.7 0 0 0-8.35 14.64L2.4 21.6l5.08-1.2A9.73 9.73 0 1 0 12 2Zm0 17.45a7.7 7.7 0 0 1-3.94-1.08l-.37-.22-3.02.71.76-2.93-.24-.38A7.72 7.72 0 1 1 12 19.45Zm4.23-5.77c-.23-.12-1.37-.68-1.58-.75-.21-.08-.37-.12-.52.11-.16.24-.6.75-.74.9-.14.16-.27.18-.5.06-.24-.12-1-.37-1.9-1.17a7.1 7.1 0 0 1-1.31-1.63c-.14-.24-.02-.36.1-.48l.35-.41c.12-.14.16-.24.24-.4.07-.15.03-.29-.02-.4-.06-.12-.52-1.27-.72-1.74-.19-.45-.38-.39-.52-.4h-.44c-.16 0-.4.05-.61.29-.21.23-.8.78-.8 1.91 0 1.12.82 2.21.93 2.36.12.16 1.61 2.46 3.9 3.45.55.24.97.38 1.3.48.55.17 1.04.15 1.44.09.44-.07 1.37-.56 1.56-1.1.2-.55.2-1.02.14-1.11-.06-.1-.21-.16-.45-.28Z"/></svg>
+        </a>
+        <a class="floating-action floating-top" href="#top" aria-label="Volver al principio de la página" title="Volver arriba" data-back-to-top hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4-7 7 1.4 1.4 4.6-4.58V20h2V7.82l4.6 4.58L19 11l-7-7Z"/></svg>
+        </a>
+    </aside>
+
+    <footer class="form-footer">
+        <a class="brand" href="index.html">Graciani Web Studio<span>®</span></a>
+        <p>Desarrollo web con visión de negocio · Sevilla</p>
+        <div><a href="mailto:fernandoga89@gmail.com">fernandoga89@gmail.com</a><a href="https://wa.me/34673998497" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+    </footer>
+</body>
+</html>
